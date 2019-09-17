@@ -100,6 +100,6 @@ class Mailer extends BaseMailer
         if (!$this->domain) {
             throw new InvalidConfigException('Mailer::domain must be set.');
         }
-        return new Mailgun($this->key, $this->endpoint);
+        return Mailgun::create($this->key, $this->endpoint);
     }
 }

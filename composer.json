@@ -12,7 +12,9 @@
     ],
     "require": {
         "yiisoft/yii2": ">=2.0.4",
-        "mailgun/mailgun-php": "~2.0"
+        "mailgun/mailgun-php": "~2.0",
+        "kriswallsmith/buzz": "*",
+        "knyholm/psr7": "*"
     },
     "autoload": {
         "psr-4": {
