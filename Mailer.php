@@ -19,7 +19,7 @@ use \Mailgun\Mailgun;
  *         'class' => 'dmitxe\mailgun\Mailer',
  *         'key' => 'key-example',
  *         'domain' => 'mg.example.com',
- *         'endpoint' => 'https://api.mailgun.net',
+ *         'endpoint' => 'api.mailgun.net',
  *     ],
  *     ...
  * ],
@@ -40,7 +40,7 @@ class Mailer extends BaseMailer
     /**
      * @var string message default class name.
      */
-    public $messageClass = 'boundstate\mailgun\Message';
+    public $messageClass = 'dmitxe\mailgun\Message';
 
     /**
      * @var string Mailgun API credentials.
@@ -55,7 +55,7 @@ class Mailer extends BaseMailer
     /**
      * @var string Mailgun API endpoint.
      */
-    public $endpoint = 'https://api.mailgun.net';
+    public $endpoint = 'api.mailgun.net';
 
     /**
      * @var Mailgun Mailgun instance.
@@ -101,6 +101,6 @@ class Mailer extends BaseMailer
         if (!$this->domain) {
             throw new InvalidConfigException('Mailer::domain must be set.');
         }
-        return Mailgun::create($this->key, $this->endpoint);
+        return new Mailgun($this->key, null, $this->endpoint);
     }
 }
