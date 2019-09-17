@@ -1,0 +1,22 @@
+{
+    "name": "dmitxe/yii2-mailgun",
+    "description": "Mailgun integration for the Yii framework",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "extension", "rackspace", "mailgun", "mail", "email", "mailer"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Dmitry Khe",
+            "email": "xedmitry@yandex.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": ">=2.0.4",
+        "mailgun/mailgun-php": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "dmitxe\\mailgun\\": ""
+        }
+    }
+}
