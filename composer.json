@@ -14,7 +14,9 @@
         "yiisoft/yii2": ">=2.0.4",
         "mailgun/mailgun-php": "~2.0",
         "kriswallsmith/buzz": "*",
-        "knyholm/psr7": "*"
+        "nyholm/psr7": "*",
+		"php-http/httplug-bundle": "*",
+		"php-http/guzzle6-adapter": "*"
     },
     "autoload": {
         "psr-4": {
