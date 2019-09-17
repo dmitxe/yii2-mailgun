@@ -16,9 +16,10 @@ use \Mailgun\Mailgun;
  * 'components' => [
  *     ...
  *     'mailer' => [
- *         'class' => 'boundstate\mailgun\Mailer',
+ *         'class' => 'dmitxe\mailgun\Mailer',
  *         'key' => 'key-example',
  *         'domain' => 'mg.example.com',
+ *         'endpoint' => 'https://api.mailgun.net',
  *     ],
  *     ...
  * ],
@@ -54,7 +55,7 @@ class Mailer extends BaseMailer
     /**
      * @var string Mailgun API endpoint.
      */
-    public $endpoint = 'api.mailgun.net';
+    public $endpoint = 'https://api.mailgun.net';
 
     /**
      * @var Mailgun Mailgun instance.
