@@ -6,6 +6,7 @@ use Yii;
 use yii\base\InvalidConfigException;
 use yii\mail\BaseMailer;
 use \Mailgun\Mailgun;
+use Mailgun\HttpClient\HttpClientConfigurator;
 
 /**
  * Mailer implements a mailer based on Mailgun.
@@ -101,6 +102,10 @@ class Mailer extends BaseMailer
         if (!$this->domain) {
             throw new InvalidConfigException('Mailer::domain must be set.');
         }
-        return new Mailgun($this->key, null, $this->endpoint);
+        $configurator = new HttpClientConfigurator();
+		$configurator->setApiKey($this->key);
+        $configurator->setEndpoint($this->endpoint);
+        return new Mailgun($configurator);
+//        return new Mailgun($this->key, null, $this->endpoint);
     }
 }
