@@ -13,7 +13,7 @@
     "require": {
         "php": "^7.1",
         "yiisoft/yii2": ">=2.0.4",
-        "mailgun/mailgun-php": "~2.0",
+        "mailgun/mailgun-php": "~3.0",
         "psr/http-client": "^1.0",
         "php-http/multipart-stream-builder": "^1.0",
         "php-http/client-common": "^1.9 || ^2.0",
