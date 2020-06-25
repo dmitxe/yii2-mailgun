@@ -31,7 +31,7 @@ Configure it in the application configuration:
         'class' => 'dmitxe\mailgun\Mailer',
         'key' => 'key-example',
         'domain' => 'mg.example.com',
-        'endpoint' => 'api.mailgun.net',
+        'endpoint' => 'https://api.mailgun.net',
     ],
     ...
 ],

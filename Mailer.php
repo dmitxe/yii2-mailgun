@@ -20,7 +20,7 @@ use Mailgun\HttpClient\HttpClientConfigurator;
  *         'class' => 'dmitxe\mailgun\Mailer',
  *         'key' => 'key-example',
  *         'domain' => 'mg.example.com',
- *         'endpoint' => 'api.mailgun.net',
+ *         'endpoint' => 'https://api.mailgun.net',
  *     ],
  *     ...
  * ],
